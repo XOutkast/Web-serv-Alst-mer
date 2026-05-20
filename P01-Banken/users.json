@@ -1,0 +1,35 @@
+[
+    {
+        "username": "1",
+        "password": "$2y$10$xJ0.CoXDQ.SkB8VicYoFl.QBqIBj98PMqOqKa1mfG8dZbqdNCw4ci",
+        "role": "användare"
+    },
+    {
+        "username": "ss",
+        "password": "$2y$10$V.76MohiHsv1wfNcmv2XfOsPQWCoJgmO98u8IO3zuxQjzybj71pku",
+        "role": "användare"
+    },
+    {
+        "username": "tt",
+        "password": "$2y$10$q7qg.Xz6snCw7OwQTcpMierp8cLgqyWXhAwQ2.\/iuKlut1ieci0dK",
+        "role": "användare"
+    },
+    {
+        "username": "Admin",
+        "password": "$2y$10$RvlRRr2W6y98Q5wnV9MOCuBCq29\/PTsWRVUPqS.L6Npfacm7kZLae",
+        "role": "användare"
+    },
+    {
+        "username": "e3",
+        "password": "$2y$10$N8.ts2oQsoV96D7Lxmp\/zev4cTVIY.ieXY84klRuUj\/06rU7Ex25a"
+    },
+    {
+        "username": "sss",
+        "password": "$2y$10$CwYAdF8qJttU7qM4F7YXHOfJjJXPKUjfCZzZpW4c1Tyv7qxazYvku"
+    },
+    {
+        "username": "abdul",
+        "password": "$2y$10$hLlB.U1NaTSMDkHQCPI28eoot9DIAVS\/wrE1ZuSdgsv\/MKmW2QSK2",
+        "role": "user"
+    }
+]

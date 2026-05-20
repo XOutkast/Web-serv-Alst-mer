@@ -1,0 +1,209 @@
+[
+    {
+        "username": "1",
+        "account": "Huvudkonto",
+        "amount": 1000,
+        "type": "deposit",
+        "date": "2025-11-16 20:51:42",
+        "note": "Startsaldo - Välkommen!"
+    },
+    {
+        "username": "admin",
+        "account": "Huvudkonto",
+        "amount": 1000,
+        "type": "deposit",
+        "date": "2025-11-16 20:51:58",
+        "note": "Startsaldo - Välkommen!"
+    },
+    {
+        "username": "admin",
+        "account": "e-spar",
+        "amount": 0,
+        "type": "account-open",
+        "date": "2025-11-17 00:02:17",
+        "note": "Konto öppnat"
+    },
+    {
+        "username": "admin",
+        "account": "Huvudkonto",
+        "amount": 32,
+        "type": "deposit",
+        "date": "2025-11-17 00:02:30"
+    },
+    {
+        "username": "admin",
+        "account": "Huvudkonto",
+        "amount": -12,
+        "type": "withdraw",
+        "date": "2025-11-17 00:02:36"
+    },
+    {
+        "username": "admin",
+        "account": "Huvudkonto",
+        "amount": -20,
+        "type": "transfer-out",
+        "date": "2025-11-17 00:03:22"
+    },
+    {
+        "username": "admin",
+        "account": "e-spar",
+        "amount": 20,
+        "type": "transfer-in",
+        "date": "2025-11-17 00:03:22"
+    },
+    {
+        "username": "ss",
+        "account": "Huvudkonto",
+        "amount": 1000,
+        "type": "deposit",
+        "date": "2025-12-03 11:02:17"
+    },
+    {
+        "username": "ss",
+        "account": "54",
+        "amount": 0,
+        "type": "account-open",
+        "date": "2025-12-03 11:02:26",
+        "note": "Konto öppnat"
+    },
+    {
+        "username": "ss",
+        "account": "Huvudkonto",
+        "amount": 324,
+        "type": "deposit",
+        "date": "2025-12-03 11:02:58"
+    },
+    {
+        "username": "tt",
+        "account": "Huvudkonto",
+        "amount": 1000,
+        "type": "deposit",
+        "date": "2026-01-21 00:09:20"
+    },
+    {
+        "username": "tt",
+        "account": "Huvudkonto",
+        "amount": 32,
+        "type": "deposit",
+        "date": "2026-01-21 00:09:45"
+    },
+    {
+        "username": "tt",
+        "account": "Huvudkonto",
+        "amount": 423,
+        "type": "deposit",
+        "date": "2026-01-21 00:09:49"
+    },
+    {
+        "username": "tt",
+        "account": "Huvudkonto",
+        "amount": -2,
+        "type": "withdraw",
+        "date": "2026-01-21 00:09:51"
+    },
+    {
+        "username": "Admin",
+        "account": "Huvudkonto",
+        "amount": 1000,
+        "type": "deposit",
+        "date": "2026-01-21 00:11:03"
+    },
+    {
+        "username": "e3",
+        "account": "Huvudkonto",
+        "amount": 1000,
+        "type": "deposit",
+        "date": "2026-01-21 00:15:32"
+    },
+    {
+        "username": "Admin",
+        "account": "Huvudkonto",
+        "amount": 3423,
+        "type": "deposit",
+        "date": "2026-01-21 00:33:10"
+    },
+    {
+        "username": "Admin",
+        "account": "Huvudkonto",
+        "amount": 423423,
+        "type": "deposit",
+        "date": "2026-01-21 00:33:22"
+    },
+    {
+        "username": "Admin",
+        "account": "Huvudkonto",
+        "amount": -3423,
+        "type": "withdraw",
+        "date": "2026-01-21 00:33:30"
+    },
+    {
+        "username": "Admin",
+        "account": "Huvudkonto",
+        "amount": -32,
+        "type": "withdraw",
+        "date": "2026-01-21 00:33:39"
+    },
+    {
+        "username": "Admin",
+        "account": "TT",
+        "amount": 0,
+        "type": "account-open",
+        "date": "2026-01-21 00:33:46"
+    },
+    {
+        "username": "Admin",
+        "account": "TT",
+        "amount": 423,
+        "type": "deposit",
+        "date": "2026-01-21 00:33:52"
+    },
+    {
+        "username": "Admin",
+        "account": "Huvudkonto",
+        "amount": -424,
+        "type": "withdraw",
+        "date": "2026-01-21 00:34:02"
+    },
+    {
+        "username": "Admin",
+        "account": "TT",
+        "amount": -23,
+        "type": "withdraw",
+        "date": "2026-01-21 00:34:15"
+    },
+    {
+        "username": "Admin",
+        "account": "Huvudkonto",
+        "amount": -967,
+        "type": "transfer-out",
+        "date": "2026-01-21 00:34:38"
+    },
+    {
+        "username": "Admin",
+        "account": "TT",
+        "amount": 967,
+        "type": "transfer-in",
+        "date": "2026-01-21 00:34:38"
+    },
+    {
+        "username": "sss",
+        "account": "Huvudkonto",
+        "amount": 1000,
+        "type": "deposit",
+        "date": "2026-01-21 00:57:23"
+    },
+    {
+        "username": "abdul",
+        "account": "Huvudkonto",
+        "amount": 1000,
+        "type": "deposit",
+        "date": "2026-01-26 14:26:46"
+    },
+    {
+        "username": "abdul",
+        "account": "wfaw",
+        "amount": 0,
+        "type": "account-open",
+        "date": "2026-01-26 14:27:04"
+    }
+]

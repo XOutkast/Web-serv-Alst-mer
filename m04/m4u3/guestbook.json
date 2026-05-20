@@ -1,0 +1,27 @@
+[
+    {
+        "date": "2025-10-07 01:23",
+        "username": "Admin",
+        "message": "HEJ DET JAG!"
+    },
+    {
+        "date": "2025-10-09 17:43",
+        "username": "Admin",
+        "message": "HI FOLKS"
+    },
+    {
+        "date": "2025-10-09 17:43",
+        "username": "Admin",
+        "message": "THIS IS INDEED A TEST"
+    },
+    {
+        "date": "2025-10-09 18:00",
+        "username": "s",
+        "message": "DE TESTEr"
+    },
+    {
+        "date": "2025-10-17 21:44",
+        "username": "Osman",
+        "message": "HEJ, MAn kan logga in som admin -        [user = \"Admin\", Pass =\"1234\"]"
+    }
+]

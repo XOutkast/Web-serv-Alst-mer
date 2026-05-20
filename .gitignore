@@ -1,0 +1,17 @@
+vendor/
+node_modules/
+
+.env
+.env.*
+.env.local
+
+.vscode/
+.idea/
+.DS_Store
+*.log
+
+/uploads/
+*.sql
+*.sqlite
+
+db_cnnt.php

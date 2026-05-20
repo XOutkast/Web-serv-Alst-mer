@@ -1,0 +1,27 @@
+[
+    {
+        "username": "Admin",
+        "password": "$2y$10$p4GzQDDRJj8Tr5sT.fGdt.Le11rC5OTs6T5xJVMvooZyMYa3yjBni",
+        "role": "admin"
+    },
+    {
+        "username": "Imahad45",
+        "password": "$2y$10$GAkHOA4Xultc.RvYewLZy.QKt.hubw.29Wu56clRuxVmkUdCMLWJW",
+        "role": "användare"
+    },
+    {
+        "username": "a",
+        "password": "$2y$10$gCkgBFPoN\/y8x5wczrD4fe.0MGWbFoWcqtkWx3mSK6kcoxKQjgazW",
+        "role": "användare"
+    },
+    {
+        "username": "s",
+        "password": "$2y$10$iI82tJtj93dVjsaRWi9oput1kqy\/j8w1ElA4sRcsqYv1dDfMR3fA.",
+        "role": "användare"
+    },
+    {
+        "username": "U",
+        "password": "$2y$10$tq5PQgloiVbK\/IVTT3OssepsCrqXxj2X9eD0Ejg83M7lO.FNq.8ie",
+        "role": "användare"
+    }
+]

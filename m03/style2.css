@@ -1,0 +1,100 @@
+@charset "UTF-8";
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  margin: 150px;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+input[type=text]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+button[type=submit] {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button[type=submit]:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
+p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  form {
+    padding: 15px;
+  }
+}
+p:contains("Hej") {
+  background-color: rgb(225.2719665272, 239.9163179916, 249.7280334728);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+p:contains("Det finns ingen användare") {
+  color: #e74c3c;
+  font-style: italic;
+}

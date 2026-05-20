@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Video Player</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1f1c2c;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .controls-container {
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        video {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            background: #000;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Dynamic Video Player</h1>
+
+<div class="controls-container">
+    <select id="videoSelect">
+        <option value="Flaatbed_End_Post_1.mp4">Flaatbed_End_Post_1.mp4</option>
+        <option value="file.name">file.name</option>
+        <option value="Tr.mp4">Tr.mp4</option>
+        <option value="TT.mp4">TT.mp4</option>
+    </select>
+</div>
+
+<video id="myVideo" controls>
+    Your browser does not support HTML5 video.
+</video>
+
+<footer>
+    &copy; 2025 Dynamic Video Player Demo
+</footer>
+
+<script>
+    const select = document.getElementById('videoSelect');
+    const video = document.getElementById('myVideo');
+
+    async function loadVideo(fileKey) {
+        try {
+            const res = await fetch("/video-url", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ fileKey })
+            });
+
+            const data = await res.json();
+            if (data.url) {
+                video.src = data.url;
+                video.load();
+                video.play();
+            } else {
+                console.error("No presigned URL returned");
+            }
+        } catch (err) {
+            console.error("Error loading video:", err);
+        }
+    }
+
+    // Initial load
+    loadVideo(select.value);
+
+    // Change video on selection
+    select.addEventListener('change', () => loadVideo(select.value));
+
+    // Refresh presigned URL every 55 minutes
+    setInterval(() => loadVideo(select.value), 55 * 60 * 1000);
+</script>
+
+</body>
+</html>

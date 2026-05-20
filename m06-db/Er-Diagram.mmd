@@ -1,0 +1,41 @@
+erDiagram
+%% RELATIONER MED CASCADE DELETE
+%% När en användare raderas tas även deras konton och transaktioner bort automatiskt
+    USERS ||--o{ ACCOUNTS: "äger (ON DELETE CASCADE)"
+    USERS ||--o{ TRANSACTIONS: "skapar (ON DELETE CASCADE)"
+    ACCOUNTS ||--o{ TRANSACTIONS: "har (ON DELETE CASCADE)"
+%% överföring mellan användare.
+%% Om mottagaren är en annan användare sätts alltid 'Huvudkonto' som mottagarkonto.
+
+%% TABELL 1: USERS - Användaruppgifter och säkerhet
+    USERS {
+        int id PK "Auto-increment unik identifierare (PRIMARY KEY)"
+        varchar40 username UK "     KRAV: Unikt användarnamn (obligatoriskt)"
+        varchar190 email UK "     KRAV: E-postadress (obligatorisk, unik)"
+        varchar255 password_hash "     KRAV: bcrypt-krypterat lösenord (säkerhet)"
+        tinyint1 must_change_password "     KRAV: Flagga för att tvinga lösenordsbyte (Default: 0)"
+        tinyint1 is_locked "     KRAV: Låst konto / spärra användare (Default: 0)"
+        int failed_login_attempts "     KRAV: Räkna felaktiga inloggningsförsök (Default: 0)"
+        datetime last_login "     KRAV: Datum för senaste inloggning (NULL om aldrig)"
+        varchar10 role "     FÖRDJUPNING: Användarroll - user eller admin (Default: user)"
+        datetime created_at "Timestamp när användare skapades (CURRENT_TIMESTAMP)"
+    }
+
+%% TABELL 2: ACCOUNTS - Bankkonton
+    ACCOUNTS {
+        int id PK "Auto-increment (PRIMARY KEY)"
+        int user_id FK "     FÖRDJUPNING: Kopplar till users.id (ägare av kontot, CASCADE DELETE)"
+        varchar80 account_name "     FÖRDJUPNING: Kontonamn - Huvudkonto, Sparkonto, Lönekonto"
+        decimal10_2 balance "     FÖRDJUPNING: Aktuellt saldo i kronor (Default: 0.00)"
+        datetime created_at "När kontot skapades (CURRENT_TIMESTAMP)"
+    }
+
+%% TABELL 3: TRANSACTIONS - Transaktionshistorik
+    TRANSACTIONS {
+        int id PK "Auto-increment (PRIMARY KEY)"
+        int user_id FK "     FÖRDJUPNING: Kopplar till users.id (användare som skapade transaktionen, CASCADE DELETE)"
+        int account_id FK "     FÖRDJUPNING: Kopplar till accounts.id (vilket konto transaktionen gäller, CASCADE DELETE)"
+        varchar30 type "     FÖRDJUPNING: Typ - deposit, withdraw, transfer-in, transfer-out, account-open"
+        decimal10_2 amount "     FÖRDJUPNING: Belopp i kronor (kan vara negativt för uttag)"
+        datetime date "Datum och tid för transaktion (CURRENT_TIMESTAMP)"
+    }
